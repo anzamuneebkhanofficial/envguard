@@ -11,11 +11,11 @@ interface GitHubStats {
 }
 
 const CACHE_KEY = 'envguard_gh_stats';
-const CACHE_TTL = 10 * 60 * 1000; // 10 minutes cache to preserve rate limits
+const CACHE_TTL = 30 * 1000; // 30 seconds cache so new stars reflect fast
 
 export function useGitHubStats(customRepo?: string): GitHubStats {
-  const repo = customRepo || process.env.NEXT_PUBLIC_GITHUB_REPO || '';
-  const repoUrl = repo ? `https://github.com/${repo}` : 'https://github.com';
+  const repo = customRepo || process.env.NEXT_PUBLIC_GITHUB_REPO || 'anzamuneebkhanofficial/envguard';
+  const repoUrl = `https://github.com/${repo}`;
 
   const [stats, setStats] = useState<{
     stars: number | null;
