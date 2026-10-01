@@ -2,14 +2,15 @@
 
 [![Version](https://img.shields.io/badge/version-1.0.0-blue.svg?style=flat-square)](package.json)
 [![License: MIT](https://img.shields.io/badge/License-MIT-emerald.svg?style=flat-square)](LICENSE)
+[![GitHub Stars](https://img.shields.io/github/stars/anzamuneebkhanofficial/envguard?style=flat-square&color=yellow)](https://github.com/anzamuneebkhanofficial/envguard/stargazers)
 [![Node](https://img.shields.io/badge/node-%3E%3D20-green.svg?style=flat-square)](https://nodejs.org)
 [![Express](https://img.shields.io/badge/express-5.0-black.svg?style=flat-square)](https://expressjs.com)
 [![Next.js](https://img.shields.io/badge/next.js-16.3-black.svg?style=flat-square)](https://nextjs.org)
 [![MongoDB](https://img.shields.io/badge/mongodb-8.0-green.svg?style=flat-square)](https://www.mongodb.com)
 
-EnvGuard is an open-source environment variable drift detector and audit tool for development teams. It tracks variable additions, edits, and deletions across projects without storing plaintext secrets.
+EnvGuard is an open-source environment variable drift detector and audit tool for development teams, created by [Muhammad Anza Muneeb Khan](https://muhammadanzamuneebkhan.vercel.app/). It tracks variable additions, edits, and deletions across projects without storing plaintext secrets.
 
-> ⭐ **Support Open Source:** If EnvGuard saved your team from broken builds or unannounced variable changes, please consider giving us a star on GitHub! It helps other developers discover the project.
+> ⭐ **Support Open Source:** If EnvGuard saved your team from broken builds or unannounced variable changes, please consider giving us a star on [GitHub](https://github.com/anzamuneebkhanofficial/envguard)! It helps other developers discover the project.
 
 ---
 

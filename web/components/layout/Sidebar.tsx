@@ -158,19 +158,32 @@ export function Sidebar({ currentProject, projects = [], onSelectProject, onOpen
         )}
 
         {/* External Links */}
-        <div className="flex items-center justify-between px-1 text-[11px] text-[#86948a]">
-          <Link href="/landing" className="hover:text-[#e3e1e9] flex items-center gap-1 transition-colors">
-            <span className="material-symbols-outlined text-[14px]">menu_book</span>
-            Docs
-          </Link>
+        <div className="space-y-2 pt-1 border-t border-[#3c4a42]/40">
+          <div className="flex items-center justify-between px-1 text-[11px] text-[#86948a]">
+            <Link href="/landing" className="hover:text-[#e3e1e9] flex items-center gap-1 transition-colors">
+              <span className="material-symbols-outlined text-[14px]">menu_book</span>
+              Docs
+            </Link>
+            <a
+              href="https://github.com/anzamuneebkhanofficial/envguard"
+              target="_blank"
+              rel="noreferrer"
+              className="hover:text-[#e3e1e9] flex items-center gap-1 transition-colors font-mono"
+            >
+              <span className="material-symbols-outlined text-[14px]">code</span>
+              GitHub
+            </a>
+          </div>
+
           <a
-            href={process.env.NEXT_PUBLIC_GITHUB_REPO ? `https://github.com/${process.env.NEXT_PUBLIC_GITHUB_REPO}` : 'https://github.com'}
+            href="https://muhammadanzamuneebkhan.vercel.app/"
             target="_blank"
             rel="noreferrer"
-            className="hover:text-[#e3e1e9] flex items-center gap-1 transition-colors"
+            className="flex items-center gap-1.5 px-1 text-[10px] text-[#4edea3] hover:text-[#4edea3]/80 transition-colors font-mono truncate"
+            title="Portfolio of Muhammad Anza Muneeb Khan"
           >
-            <span className="material-symbols-outlined text-[14px]">code</span>
-            GitHub
+            <span className="material-symbols-outlined text-[13px]">person</span>
+            By Anza Muneeb Khan
           </a>
         </div>
       </div>

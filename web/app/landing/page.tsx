@@ -603,15 +603,21 @@ Change Summary:
           </div>
 
           <div className="flex flex-wrap items-center gap-6">
-            <a href={repoUrl} target="_blank" rel="noreferrer" className="hover:text-[#e3e1e9]">GitHub Repository</a>
+            <a href="https://github.com/anzamuneebkhanofficial/envguard" target="_blank" rel="noreferrer" className="hover:text-[#e3e1e9] flex items-center gap-1.5 transition-colors">
+              <span className="material-symbols-outlined text-[15px]">code</span>
+              GitHub Repository
+            </a>
+            <a href="https://muhammadanzamuneebkhan.vercel.app/" target="_blank" rel="noreferrer" className="text-[#4edea3] hover:text-[#4edea3]/80 flex items-center gap-1.5 transition-colors font-medium">
+              <span className="material-symbols-outlined text-[15px]">person</span>
+              Developed by Muhammad Anza Muneeb Khan
+            </a>
             <a href="#transparency" className="hover:text-[#e3e1e9]">CLI Specification</a>
-            <a href="#transparency" className="hover:text-[#e3e1e9]">Docker Architecture</a>
             <span>MIT License</span>
           </div>
         </div>
 
         <div className="max-w-6xl mx-auto mt-6 pt-6 border-t border-[#3c4a42]/30 flex flex-wrap items-center justify-between gap-3 text-[11px]">
-          <span>© 2026 EnvGuard Core Contributors. Open Source Developer Infrastructure.</span>
+          <span>© 2026 EnvGuard Core Contributors. Built by <a href="https://muhammadanzamuneebkhan.vercel.app/" target="_blank" rel="noreferrer" className="text-[#4edea3] hover:underline">Muhammad Anza Muneeb Khan</a>.</span>
           <span>Zero-Plaintext Masking • SHA-256 Fingerprinting • Audit History</span>
         </div>
       </footer>
