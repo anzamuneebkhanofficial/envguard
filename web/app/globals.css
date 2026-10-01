@@ -1,0 +1,145 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    color-scheme: dark;
+    --background: #121318;
+    --surface: #121318;
+    --surface-dim: #121318;
+    --surface-bright: #38393f;
+    --surface-container-lowest: #0d0e13;
+    --surface-container-low: #1a1b21;
+    --surface-container: #1e1f25;
+    --surface-container-high: #292a2f;
+    --surface-container-highest: #34343a;
+    --surface-variant: #34343a;
+    --surface-tint: #4edea3;
+    --on-surface: #e3e1e9;
+    --on-surface-variant: #bbcabf;
+    --outline: #86948a;
+    --outline-variant: #3c4a42;
+    --primary: #4edea3;
+    --on-primary: #003824;
+    --primary-container: #10b981;
+    --on-primary-container: #00422b;
+    --secondary: #4cd7f6;
+    --on-secondary: #003640;
+    --secondary-container: #03b5d3;
+    --secondary-fixed: #acedff;
+    --on-secondary-fixed: #001f26;
+    --tertiary: #ffb95f;
+    --on-tertiary: #472a00;
+    --tertiary-container: #e29100;
+    --error: #ffb4ab;
+    --error-container: #93000a;
+    --border-dim: #222634;
+    --border-focus: #3b4256;
+  }
+
+  .light-theme {
+    --background: #f8f9fa;
+    --surface: #ffffff;
+    --surface-dim: #f1f3f5;
+    --surface-bright: #ffffff;
+    --surface-container-lowest: #ffffff;
+    --surface-container-low: #f8f9fa;
+    --surface-container: #edf0f2;
+    --surface-container-high: #e2e6ea;
+    --surface-container-highest: #d0d7de;
+    --surface-variant: #e2e6ea;
+    --surface-tint: #059669;
+    --on-surface: #1e2022;
+    --on-surface-variant: #495057;
+    --outline: #6c757d;
+    --outline-variant: #ced4da;
+    --primary: #059669;
+    --on-primary: #ffffff;
+    --primary-container: #10b981;
+    --on-primary-container: #ffffff;
+    --secondary: #0284c7;
+    --on-secondary: #ffffff;
+    --secondary-container: #bae6fd;
+    --secondary-fixed: #bae6fd;
+    --on-secondary-fixed: #0369a1;
+    --tertiary: #d97706;
+    --on-tertiary: #ffffff;
+    --tertiary-container: #fef3c7;
+    --error: #dc2626;
+    --error-container: #fee2e2;
+    --border-dim: #e5e7eb;
+    --border-focus: #9ca3af;
+  }
+}
+
+body {
+  background-color: var(--background);
+  color: var(--on-surface);
+  font-family: 'Geist', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  overflow-x: hidden;
+  min-height: 100vh;
+}
+
+code, pre, .font-mono {
+  font-family: 'JetBrains Mono', monospace;
+}
+
+/* Material Symbols icon helper */
+.material-symbols-outlined {
+  font-family: 'Material Symbols Outlined';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 18px;
+  line-height: 1;
+  letter-spacing: normal;
+  text-transform: none;
+  display: inline-block;
+  white-space: nowrap;
+  word-wrap: normal;
+  direction: ltr;
+  font-feature-settings: 'liga';
+  -webkit-font-smoothing: antialiased;
+  vertical-align: middle;
+}
+
+/* Technical micro-grid from design.md Section 2.5 */
+.bg-tech-grid {
+  background-size: 32px 32px;
+  background-image: 
+    linear-gradient(to right, rgba(60, 74, 66, 0.15) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(60, 74, 66, 0.15) 1px, transparent 1px);
+}
+
+/* Custom scrollbars */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: var(--surface-container-lowest);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--outline-variant);
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--outline);
+}
+
+/* Form input dark consistency & browser autofill overrides */
+input,
+textarea,
+select {
+  color-scheme: dark;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active,
+textarea:-webkit-autofill,
+select:-webkit-autofill {
+  -webkit-box-shadow: 0 0 0 1000px #1a1b21 inset !important;
+  -webkit-text-fill-color: #e3e1e9 !important;
+  caret-color: #e3e1e9 !important;
+  transition: background-color 5000s ease-in-out 0s;
+}
